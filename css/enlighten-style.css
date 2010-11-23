@@ -1,0 +1,1117 @@
+/* $Id$ */
+
+/* Basic Typography & Colors
+-------------------------------------------------------------- */
+/* Add general site styling here for typography and background */
+body {
+  font-weight:normal;
+  font-family:Arial,sans-serif;
+  font-size: 75%;   /* also set in fusion_starter.info: settings[base-font-size] = font-size-12 */
+  color:#252525;
+}
+
+/* Default link styles - separate a:visited for a different visited link style */
+
+a {
+  color: #ba4308;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration:none;
+}
+.main a:visited, .splash-group a:visited {
+  color:#8a5e29;
+}
+
+
+/* Hover/active link styles. Don't forget :focus for accessibility */
+a:hover,
+a:focus,
+a:active {
+  text-decoration:underline;
+}
+
+
+/* Specific Typography
+-------------------------------------------------------------- */
+#site-name {
+  font-size: 300%;
+  line-height: 120%;
+  font-variant:small-caps;
+  position:relative;
+  left:5px;
+  font-family: "Times New Roman", Times, serif;
+  color:#252525;
+}
+#slogan {
+  font-size:150%;
+  line-height:90%;
+  font-variant:small-caps;
+  font-family: "Times New Roman", Times, serif;
+  position:relative;
+  left:10px;
+  color:#252525;
+  margin-top:-8px;
+}
+
+.footer-message {
+  font-size: 90%;
+}
+
+
+/* HTML Elements
+-------------------------------------------------------------- */
+body {
+}
+
+/* Site Info
+-------------------------------------------------------------- */
+/* Wrapper around logo, site name, and slogan */
+.header-site-info span {
+  display: block;
+}
+
+/* Add float here to put logo and site name side by side, also add margins as
+  needed */
+#logo {
+  float:left;
+}
+
+/* Link and hover styles for site name */
+.header-group .inner a:link,
+.header-group .inner a:visited,
+.header-group .inner a:hover,
+.header-group .inner a:active {
+  text-decoration:none;
+}
+
+/* Typography for site slogan */
+#slogan {
+}
+
+
+/* Regions
+
+  Classes (.region-name) should always be used instead of IDs (#region-name) so
+  that Skinr styles can override them with a class later
+-------------------------------------------------------------- */
+
+/* All Regions
+-------------------------------------------------------------- */
+/* By default this wrapper is set to 100% width and centered -- override here to
+  narrow wrapper or align left or right */
+.page {
+}
+
+/* The 0 values here remove padding and spacing at the bottom of the page.
+  Remove to add a gap at the very bottom of the page */
+.page-inner {
+  border: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.main .block {
+  margin:12px 0;
+}
+#breadcrumbs, #content-inner {
+  margin-top:0px;
+}
+.main #block-user-0.fusion-horiz-login .inner {
+  padding:0;
+}
+.main #block-user-0.fusion-horiz-login .inner div.form-item {
+  padding-bottom:6px;
+}
+
+/* Header Regions
+-------------------------------------------------------------- */
+/* Header Top region to the bottom of Header region */
+/* For full-width header background, add background image/color here */
+.header-group-wrapper {
+  height:142px;
+  background:url('../images/header-bg.png') white left top repeat-x;
+}
+
+#header-site-info {
+  width:600px;
+  padding-top:10px;
+  position:absolute;
+  top:19px;
+}
+
+.header-group {
+  position:relative;
+}
+
+.header-shadow {
+  background:url('../images/header-shadow.png') transparent top left repeat-x;
+}
+
+/* Navbar
+/-------------------------------------------------------------- */
+div#navbar {
+  float:right;
+  width:auto;
+  margin-right: 40px;
+}
+div#navbar-inner {
+  position:relative;
+  max-height:40px;
+}
+div#navbar-content {
+  margin: 0 -44px;
+}
+div#navbar-l {
+  background: url("../images/nav-l.png") transparent no-repeat bottom left;
+  position:absolute;
+  top:0;
+  left:0;
+  width:64px;
+  height:40px;
+}
+div#navbar-r {
+  background: url("../images/nav-r.png") transparent no-repeat bottom right;
+  position:absolute;
+  top:0;
+  right:0;
+  width:64px;
+  height:40px;
+}
+div#navbar-c {
+  background: url("../images/nav-c.png") transparent repeat-x bottom center;
+  top:0;
+  margin:0 63px;
+  height:40px;
+}
+.navbar {
+  overflow:visible;
+}
+
+.navbar .search-box h2, .navbar .block-search h2,
+.navbar .search-box label, .navbar .block-search label {
+  display:none;
+}
+
+.navbar .block {
+  width:auto;
+  float:left;
+  margin:0;
+  line-height:40px;
+}
+
+/* Primary Menu   TODO: add default colours
+/-------------------------------------------------------------- */
+/* Add general styles for primary menu here, such as typography, borders, floats,
+  or spacing above/below */
+.primary-menu {
+  line-height:37;
+  vertical-align:middle;
+  font-size:100%;
+  padding:9px;
+  margin-bottom:0;
+}
+
+/* styles for Superfish primary menu */
+.primary-menu-inner ul.sf-menu {
+}
+
+/* Link style for top level menu items, add padding here */
+.primary-menu-inner ul.sf-menu a,
+.primary-menu-inner ul.sf-menu a:visited  {
+  padding:0 12px;
+  font-size:16px;
+  line-height:17px;
+  color: #020f20;
+}
+
+.primary-menu-inner ul.sf-menu a:hover,
+.primary-menu-inner ul.sf-menu a:active,
+.primary-menu-inner ul.sf-menu a:focus {
+}
+
+/* These are the top level menu items, add border-right here for separators */
+.primary-menu-inner ul.sf-menu li {
+  border-right: 1px solid #f0f0f0;
+}
+
+/* Add border-right: 0; here to remove separator on last menu item */
+.primary-menu-inner ul.sf-menu li.last {
+  border-right:0;
+}
+
+/* Style for container of dropdown, add background or border */
+.primary-menu-inner ul.sf-menu ul {
+  background-color:#ffffff;
+  border: 1px solid #cecece;
+  width: 200px;
+  padding-bottom: 2px;
+  margin-right:-20px;
+}
+
+/* Style for individual dropdown menu items, add border-bottom for separators */
+.primary-menu-inner ul.sf-menu li li {
+  background-color: #ffffff;
+  padding: 2px 1px 3px;
+  border-bottom: 1px solid #f0f0f0;
+  border-right:none;
+  margin: 1px 6px 1px 2px;
+  width: 192px;
+}
+
+.primary-menu-inner ul.sf-menu li li a:link,
+.primary-menu-inner ul.sf-menu li li a:visited {
+  padding:3px 8px;
+}
+
+ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul {
+  left: 15em;
+}
+
+.primary-menu-inner ul.sf-menu li li.last {
+  border-bottom:none;
+}
+
+.primary-menu-inner ul.sf-menu li li li {
+}
+
+/* Style for hover of dropdown menu items (add background-color here) */
+.primary-menu-inner ul.sf-menu li ul li:hover a,
+.primary-menu-inner ul.sf-menu li ul li.sfHover a {
+  background: url("../images/bg-color.png") white repeat top left;
+  color: #ffffff;
+}
+
+
+/* Secondary menu
+-------------------------------------------------------------- */
+/* This menu usually appears in the header as a set of simple text links */
+.secondary-menu {
+}
+
+/* Set general style for menu here -- background, alignment, etc. */
+.secondary-menu-inner ul.links {
+  text-align:left;
+}
+
+/* Add a border-right here for a separator */
+.secondary-menu-inner ul.links li {
+  border-right: 1px solid #454545;
+}
+
+/* Add border-right: 0; here to remove right separator on last menu item */
+.secondary-menu-inner ul.links li.last {
+  border-right: 0;
+}
+
+/* Styles for links */
+.secondary-menu-inner ul.links li a:link,
+.secondary-menu-inner ul.links li a:visited {
+  padding: 3px;
+  color: #f0f0f0;
+}
+
+.secondary-menu-inner ul.links li a:hover,
+.secondary-menu-inner ul.links li a:focus,
+.secondary-menu-inner ul.links li a.active {
+  color:#f0f0f0;
+}
+
+
+/* Header - Search
+-------------------------------------------------------------- */
+.search-box {
+}
+
+.search-box-inner {
+}
+
+.search-box-inner form#search-theme-form {
+}
+
+.search-box-inner input#edit-search-theme-form-header {
+}
+
+
+/*  Main Area (content + sidebars + preface bottom + postscript top)
+-------------------------------------------------------------- */
+.main-wrapper {
+  background: #ffffff;
+}
+
+
+/* Sidebar Regions
+-------------------------------------------------------------- */
+/* Sidebar widths can be controlled through theme settings */
+.sidebar-first {
+}
+
+.sidebar-last {
+}
+
+
+/* Content Regions
+-------------------------------------------------------------- */
+.main-wrapper {
+  margin-top:20px;
+  position:relative;
+}
+
+.content-top {
+}
+
+.content-region {
+}
+
+.content {
+}
+
+.content-inner {
+}
+
+.content-bottom {
+}
+
+/* This region only appears on full node pages. It's useful for ads or other
+  content between the body of the node and its comments */
+.node-bottom {
+}
+
+/*  Splash Regions
+-------------------------------------------------------------- */
+#splash-group-wrapper {
+  clear:both;
+  padding: 12px 0 8px;
+}
+
+.splash-first, .splash-last {
+  width: 33%;
+  float:left;
+  margin:0;
+}
+.splash-middle {
+  width: 33.9%;
+  float:left;
+  margin:0;
+}
+.splash-group-inner .block .inner {
+  margin:0;
+}
+
+
+/*  Postscript & Footer Regions
+-------------------------------------------------------------- */
+.footer-wrapper {
+}
+
+.footer {
+}
+
+.footer-inner {
+}
+
+.footer-shadow {
+  background:url("../images/footer-shadow.png") transparent repeat-x top left;
+}
+
+.footer-message-wrapper {
+  padding-top:14px;
+  background: url("../images/footer-bg-color.png") transparent repeat-x top left;
+}
+
+.footer-message {
+}
+
+.footer-message-inner {
+}
+
+.footer-message-text {
+  color:#696969;
+}
+
+
+/* Page titles
+/-------------------------------------------------------------- */
+/* Page and full node titles */
+h1.title {
+}
+
+
+/* Default node styles
+/-------------------------------------------------------------- */
+/* Change unpublished and preview colors for dark background themes */
+.node-unpublished {
+  background-color: #fff4f4;
+}
+.preview .node {
+  background-color: #ffffea;
+}
+
+/* Typography for node titles */
+h2.title {
+}
+
+/* Colors and styles for linked node titles, ie. teaser listing at /node */
+h2.title a:link,
+h2.title a:visited {
+}
+
+h2.title a:hover,
+h2.title a:focus,
+h2.title a:active {
+}
+
+/* Separators and padding for node teasers */
+.teaser {
+}
+
+/* Author/date info */
+.meta {
+  margin-top:-10px;
+}
+
+.submitted {
+}
+
+/* Links for nodes (taxonomy, commenting, read more, etc) */
+.node ul.links li {
+}
+.node ul.links a {
+}
+
+/* Only more/read more links */
+div.node .read-more a,
+div.node .more-link a {
+}
+
+div.node img.imagecache {
+  float:right;
+  padding:4px;
+  border:1px solid #cecece;
+  margin: 0 0 9px 19px;
+}
+div.teaser img.imagecache {
+  float:left;
+  padding:2px;
+  border: 1px solid #cecece;
+  margin: 0 8px 8px 0;
+}
+
+/* Drupal Messages
+/-------------------------------------------------------------- */
+/* General style for all errors/messages (border, padding, etc.) */
+div.content-messages div.messages,
+div.content-help div.help {
+}
+
+/* Status messages: green */
+div.content-messages-inner div.status {
+}
+
+/* Warning messages: yellow */
+div.content-messages-inner div.warning {
+}
+
+/* Error messages: red */
+div.content-messages-inner div.error {
+}
+
+/* Help messages: blue */
+div.content-help-inner div.help {
+}
+
+/* Error that appears when a required form field is not filled out */
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 1px solid #aa1144;
+}
+
+/* "New" text and required form field asterisk (default = red) */
+.marker,
+.form-required {
+  color: #aa1144;
+}
+
+
+/* Default block title styles
+/-------------------------------------------------------------- */
+h2.block-title {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 2px 0 12px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #cecece;
+  margin-bottom: 8px;
+}
+
+.sidebar-first .block .inner, .sidebar-last .block .inner {
+  background: url(../images/block-color.png) white repeat-x top left;
+  margin: 1px;
+}
+
+.sidebar-first .block, .sidebar-last .block {
+  background: white;
+  border: 1px solid #cecece;
+  margin: 12px -2px;
+}
+.sidebar-first .block {
+  margin:12px 0;
+}
+
+.main .block .inner, .splash-group .block .inner {
+  padding: 9px 19px;
+}
+.main .block .inner .inner, .splash-group .block .inner .inner {
+  padding: 0;
+}
+
+/* Breadcrumbs
+-------------------------------------------------------------- */
+.breadcrumbs {
+  margin:1em 0;
+}
+.breadcrumbs .breadcrumbs-inner.inner {
+  padding: 0 40px;
+}
+
+.breadcrumbs a:link,
+.breadcrumbs a:visited {
+}
+#breadcrumbs {
+  width:auto;
+  position:absolute;
+  right:34px;
+  top:47px;
+}
+body.main-wrapper-fix #main-wrapper {
+  margin-top:0;
+}
+
+
+/* Tab Menus   TODO: tab styles?
+/-------------------------------------------------------------- */
+#tabs-content {
+  background-color: transparent;
+  padding: 0;
+  font-size:11px;
+  width:auto;
+  margin:0;
+  position:absolute;
+  top:116px;
+  left:0px; /* LTR */
+  z-index:1;
+}
+
+div#tabs-c {
+  top:0;
+  height:40px;
+}
+
+#content-tabs .inner {
+  padding: 0px 14px 8px;
+}
+
+#content-tabs ul.primary,
+#content-tabs ul.secondary {
+  border-left: 1px solid #cecece;
+  border-top: 1px solid #cecece;
+  clear: both;
+  float: left; /* LTR */
+  margin: 0;
+  padding: 0;
+}
+
+#content-tabs ul.secondary {
+  border-bottom: 1px solid #cecece;
+  border-top:none;
+  margin-top: 1px;
+  text-transform: lowercase;
+}
+
+#content-tabs ul.primary {
+}
+
+#content-tabs ul.primary li,
+#content-tabs ul.secondary li {
+  border:none;
+  border-right:1px solid #cecece;
+  display: inline;
+  float: left; /* LTR */
+  list-style: none;
+  margin: 0;
+  padding: 0 6px;
+  background:#efefef;
+}
+
+#content-tabs ul.primary li a:link,
+#content-tabs ul.primary li a:visited,
+#content-tabs ul.secondary li a:link,
+#content-tabs ul.secondary li a:visited {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  float: left; /* LTR */
+  font-weight: normal;
+  margin: 0;
+  padding: 5px 8px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#content-tabs ul.secondary li a:link,
+#content-tabs ul.secondary li a:visited {
+  color: #555555;
+  padding: 2px 4px;
+}
+
+#content-tabs ul.primary li.active,
+#content-tabs ul.secondary li.active {
+  background:#ffffff;
+}
+
+#content-tabs ul.primary li a.active:link,
+#content-tabs ul.primary li a.active:visited {
+  color: #555555;
+}
+
+#content-tabs ul.secondary li a.active:link,
+#content-tabs ul.secondary li a.active:visited {
+  color: #777777;
+}
+
+#content-tabs ul.primary li a:hover,
+#content-tabs ul.primary li a:focus,
+#content-tabs ul.secondary li a:hover,
+#content-tabs ul.secondary li a:focus {
+  color: #777777;
+  background: #fff;
+}
+
+/* Pagers
+-------------------------------------------------------------- */
+ul.pager {
+}
+
+ul.pager li {
+}
+
+ul.pager a,
+ul.pager li.pager-current {
+  border-color: #333333;
+}
+
+ul.pager li.pager-current {
+  background-color: #777777;
+  color: #ffffff;
+}
+
+ul.pager a:hover,
+ul.pager a:active,
+ul.pager a:focus {
+  background-color: #777777;
+  border-color: #333333;
+  color: #ffffff;
+}
+
+/* Forms
+/-------------------------------------------------------------- */
+/* Typography and backgrounds for all form buttons */
+form input.form-submit {
+  margin: 2px;
+  padding: 3px 5px;
+}
+
+/* Hover style for form buttons */
+form input.form-submit:hover,
+form input.form-submit.hover,
+form input.form-submit:focus {
+}
+
+/* Typography, background, borders, padding for form fields */
+.form-item input,
+.form-item select,
+.form-item textarea {
+}
+
+/* Remove backgrounds and border on radios and checkboxes */
+.form-item .form-radio,
+.form-item .form-checkbox {
+  background: none;
+  border: none !important;
+}
+
+/* Fieldset wrapper around groups of form elements -- add border here */
+fieldset {
+}
+
+/* Typography and spacing for legend of fieldsets */
+fieldset legend {
+}
+
+/* Link style for legend of fieldsets */
+fieldset legend,
+legend.collapse-processed,
+legend.collapse-processed a:link,
+legend.collapse-processed a:visited {
+}
+
+/* Custom icons on (open) collapsible fieldsets */
+html.js fieldset.collapsible legend a:link,
+html.js fieldset.collapsible legend a:visited {
+}
+
+/* Custom icons on (closed) collapsible fieldsets */
+html.js fieldset.collapsed legend a:link,
+html.js fieldset.collapsed legend a:visited {
+}
+
+body.node-edit div#sidebar-first,
+body.node-edit div#sidebar-last {
+  display:none;
+}
+body.node-edit div#content-group {
+  width:960px;
+}
+
+/* Tables
+-------------------------------------------------------------- */
+table {
+}
+
+/* Body of tables */
+tbody {
+  border-top: 1px solid #cecece;
+}
+
+/* Header of tables */
+thead th,
+th {
+  border-bottom: 3px solid #cecece;
+}
+
+tbody th {
+  border-bottom: 1px solid #cecece;
+}
+
+/* Alternating row background styles */
+tr.even,
+tr.even td {
+  background-color: #eeeeee;
+  border-bottom: 1px solid #cecece;
+}
+
+tr.odd,
+tr.odd td {
+  background-color: #ffffff;
+  border-bottom: 1px solid #cecece;
+}
+
+td.active {
+}
+
+tr.drag td,
+tr.drag-previous td {
+  color: #000000;
+}
+
+
+/* Maintenance Page
+/-------------------------------------------------------------- */
+/* Maintenance page tpl file in Fusion Core has simplified layout, but you can
+  also add specific styles, such as a background, just for your offline page */
+.in-maintenance  {
+}
+
+
+/*--------------------------------------------------------------*/
+/* Module styles
+/-------------------------------------------------------------- */
+
+
+/* Book
+/-------------------------------------------------------------- */
+.book-navigation .menu {
+  border-top: 1px solid #cccccc;
+}
+
+.book-navigation .page-links {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+
+/* Comments
+/-------------------------------------------------------------- */
+/* Style for each individual comment */
+div.comment {
+}
+
+/* Subject (title) of each comment */
+div.comment h3.title {
+}
+
+/* Links (edit, reply, delete) for each comment */
+div.comment div.links a,
+div.comment ul.links a {
+}
+
+/* Alternating styles for even/odd comments */
+.comments div.odd {
+  background-color: #ffffff;
+}
+
+.comments div.even {
+  background-color: #eeeeee;
+}
+
+/* A special highlight style for a comment by the author of the node */
+.comments div.comment-by-author {
+  background-color: #f0f0f0;
+}
+
+/* Comment signatures */
+.signature {
+  border-top: 1px solid #d6ddb9;
+}
+
+/* User avatars in comments */
+.comment-wrapper .picture img {
+}
+
+
+/* Events
+/-------------------------------------------------------------- */
+div.field.field-field-event-info {
+  margin:9px 0;
+  font-weight:bold;
+}
+div.view-id-inc_calendar div.views-field-field-event-info-value,
+div.view-id-inc_calendar div.views-field-tid {
+  font-size:smaller;
+  margin-left:12px;
+  line-height: 1.3em;
+}
+div.view-id-inc_calendar div.views-field-title {
+  font-weight:bold;
+}
+div.view-id-inc_calendar div.views-row {
+  margin:9px 0;
+}
+div.view-id-inc_calendar h3 {
+  margin-top:16px;
+  border-bottom:1px dashed #cecece;
+}
+div.calendar-calendar div.month-view td {
+  height:126px;
+  line-height: 1.26em;
+}
+div.calendar-calendar div.month-view td .inner div,
+div.calendar-calendar div.month-view td .inner div a,
+div.calendar-calendar div.month-view td .inner div.calendar div,
+div.calendar-calendar div.month-view td .inner div.calendar div a {
+  background: transparent;
+  padding:0;
+}
+div.calendar-calendar div.month-view td div.month.day {
+  float:right;
+  position:absolute;
+  right:0px;
+}
+div.view-id-inc_calendar.view-display-id-block_3 ul.pager {
+  margin-bottom:5px;
+}
+div.view-id-inc_calendar.view-display-id-block_3 div.more-link {
+  text-align:left;
+  float:left;
+}
+a.ical-icon:before {
+  content:"ical feed: ";
+}
+
+/* Forum
+/-------------------------------------------------------------- */
+#forum .description {
+}
+
+.forum-topic-navigation {
+  border-top: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+}
+
+
+/* Incubator Site - General
+/-------------------------------------------------------------- */
+#block-inc_glue-0.enlist-block-big-list span.core-activity-term {
+  display:block
+}
+#block-inc_glue-0 span.core-activity-nodecount:before{
+  content:" - ";
+}
+#block-inc_glue-0.enlist-block-big-list span.core-activity-nodecount {
+  color:#CECECE;
+  display:block;
+  font-weight:bold;
+  text-align:right;
+  width:70%;
+  font-size:x-small;
+  line-height:1em;
+  font-family: Arial, sans-serif;
+  position:relative;
+  top:-2px;
+}
+
+
+div.view-id-taxonomy_term.view-display-id-attachment_1 div.terms {
+  display:none;
+}
+
+
+/* Location
+/-------------------------------------------------------------- */
+h3.location-locations-header {
+  display:none;
+}
+
+
+/* Poll
+/-------------------------------------------------------------- */
+div.poll div.bar {
+  background-color: #f0f0f0;
+}
+
+div.poll div.bar div.foreground {
+  background-color: #999999;
+}
+
+
+/* Profiles
+/-------------------------------------------------------------- */
+.profile .picture {
+  float: left;
+  padding-right: 20px;
+  background: white;
+}
+
+.profile .profile-profile_firstname,
+.profile .profile-profile_lastname,
+.profile dt.profile-profile_bio {
+  display:none;
+}
+
+/* Styles for sub-headings on user profiles */
+.profile dt {
+  background-color: #cecece;
+}
+
+
+/* Ubercart - catalog
+/-------------------------------------------------------------- */
+
+/* Horizontal list of subcategories in catalog */
+ul.uc-categories {
+}
+
+.uc-categories li a {
+  font-weight: bold;
+  padding: 0 5px 0 3px;
+}
+
+/* Product and category names */
+.catalog-grid-title a:link,
+.catalog-grid-title a:visited,
+.category a:link,
+.category a:visited {
+}
+
+.catalog-grid-title a:hover,
+.catalog-grid-title a:focus,
+.category a:hover,
+.category a:focus {
+}
+
+/* Sell price in Ubercart catalog */
+.category-grid-products .catalog-grid-sell-price {
+}
+
+/* Ubercart - add to cart buttons
+/-------------------------------------------------------------- */
+
+/* Add to cart buttons */
+input.node-add-to-cart,
+input.list-add-to-cart {
+}
+
+/* Hover and focus styles, with .hover class added for IE6 support */
+input.node-add-to-cart:hover,
+input.node-add-to-cart.hover,
+input.node-add-to-cart:focus,
+input.list-add-to-cart:hover,
+input.list-add-to-cart.hover,
+input.list-add-to-cart:focus {
+}
+
+/* Ubercart - product nodes
+/-------------------------------------------------------------- */
+
+#field-group {
+}
+
+#price-group {
+}
+
+/* Product images */
+.product-image a img {
+}
+
+.product-image a:hover img,
+.product-image a:focus img {
+}
+
+/* Display price on full product nodes */
+.full-node .product-group .uc-price-display {
+}
+
+/* Product attributes on full nodes */
+.full-node .product-group .attributes {
+}
+
+/* Ubercart - general / checkout
+/-------------------------------------------------------------- */
+
+/* For optional "Powered by Ubercart" footer message */
+#store-footer {
+}
+
+#store-footer a:link,
+#store-footer a:visited {
+}
+
+/* View cart/Checkout links in Ubercart cart block */
+.cart-block-summary-links ul.links li a {
+}
+
+.cart-block-summary-links ul.links li.cart-block-checkout a:link,
+.cart-block-summary-links ul.links li.cart-block-checkout a:visited {
+}
+
+/* Key checkout process buttons: Checkout, Continue, and Submit Order */
+#uc-cart-view-form #edit-checkout,
+#uc-cart-checkout-form #edit-continue,
+#uc-cart-checkout-review-form #edit-submit {
+}
+
+/* Table on final order review page */
+.order-review-table {
+}
+
+#cart-form-products table th {
+  border-bottom: 3px solid #dec2c3;
+}
+
+
+/* Skinr
+/-------------------------------------------------------------- */

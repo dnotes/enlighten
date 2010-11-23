@@ -1,0 +1,33 @@
+/* $Id$ */
+
+body {
+  font-weight:normal;
+  font-family:Arial,sans-serif;
+}
+
+a {
+  color:#ba4308;
+  text-decoration:none;
+}
+a:hover {
+  text-decoration:underline;
+}
+a:visited {
+  color:#5a2e19;
+}
+
+/***********
+ Header
+*/
+
+div#header {
+  height:91px;
+  background-color:#1977aa;
+  width:100%;
+}
+
+div#logo-title {
+  width:
+}
+
+
